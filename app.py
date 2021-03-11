@@ -30,14 +30,14 @@ def get_geoTerms():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check database for existing usernames
+        # Checks db to see if user already in use
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("register"))
-
+        # Generates a hashed password for security and stores in database
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
@@ -53,23 +53,23 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        # check if username exists in db
+        # Checks db to see if user already in use
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            # ensure hashed password matches user input
+            # Checks if hashed password matches user password
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
             else:
-                # invalid password match
+                # Password incorrect
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
-            # username doesn't exist
+            # If the Username doesn't exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
