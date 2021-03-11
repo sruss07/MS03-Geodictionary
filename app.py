@@ -30,7 +30,7 @@ def get_geoTerms():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check if username already exists in db
+        # check database for existing usernames
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
