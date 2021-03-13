@@ -23,7 +23,7 @@ mongo = PyMongo(app)
 @app.route("/get_geoTerms")
 def get_geoTerms():
     # Sorts terms alphabetically
-    geoTerms = mongo.db.geoTerms.find()
+    geoTerms = list(mongo.db.geoTerms.find())
     return render_template("terms.html", geoTerms=geoTerms)
 
 
