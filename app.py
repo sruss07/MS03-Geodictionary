@@ -103,7 +103,8 @@ def logout():
 
 @app.route("/add_term")
 def add_term():
-    return render_template("add_term.html")
+    letters = mongo.db.letters.find().sort("letters", 1)
+    return render_template("add_term.html", letters=letters)
 
 
 if __name__ == "__main__":
