@@ -113,7 +113,25 @@ def add_term():
         mongo.db.geoTerms.insert_one(geoTerms)
         flash("Thanks, new earth science term and definition added")
         return redirect(url_for("get_geoTerms"))
+
+    geoTerms = mongo.db.geoTerms.find().sort("term", 1)
     return render_template("add_term.html")
+
+
+@app.route("/edit_term/term_id", methods=["GET", "POST"])
+def edit_term(term_id):
+    if request.method == "POST":
+        geoTerms = {
+            "term": request.form.get("term"),
+            "definition": request.form.get("definition"),
+            "created_by": session["user"]
+        }
+        mongo.db.geoTerms.update({"_id": ObjectId(term_id)}, geoTerms)
+        flash("Thanks, earth science term and definition updated")
+
+    term = mongo.db.geoTerms.find_one({"_id": ObjectId(term_id)})
+    geoTerms = mongo.db.geoTerms.find().sort("term", 1)
+    return render_template("edit_term.html", term=term)
 
 
 if __name__ == "__main__":
