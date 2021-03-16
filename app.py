@@ -101,10 +101,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_term")
+@app.route("/add_term", methods=["GET", "POST"])
 def add_term():
-    letters = mongo.db.letters.find().sort("letters", 1)
-    return render_template("add_term.html", letters=letters)
+    # allows users to add new terms and definitions
+    if request.method == "POST":
+        geoTerms = {
+            "term": request.form.get("term"),
+            "definition": request.form.get("definition"),
+            "created_by": session["user"]
+        }
+        mongo.db.geoTerms.insert_one(geoTerms)
+        flash("Thanks, new earth science term and definition added")
+        return redirect(url_for("get_geoTerms"))
+    return render_template("add_term.html")
 
 
 if __name__ == "__main__":
