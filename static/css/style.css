@@ -1,3 +1,13 @@
+
+/*-------------Base.html-----------*/
+
+body {
+    background-image: url("../images/rock_foliation_texture.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
 .flash-message {
     line-height: 2;
     color: lightslategray;
