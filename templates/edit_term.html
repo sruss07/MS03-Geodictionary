@@ -26,8 +26,12 @@
         <!--Submit button-->
         <div class="row">
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large submit-button">
-                Edit Existing Term <i class="fas fa-edit"></i></button>
+                <button type="submit" class="btn submit-button">
+                    Edit Existing Term <i class="fas fa-edit"></i></button>
+                    <!--Cancel button-->
+                <a href="{{ url_for('get_geoTerms') }}" class="btn delete-button">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
             </div>
         </div>
     </form>
