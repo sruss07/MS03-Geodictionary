@@ -9,16 +9,14 @@ body {
     font-family: 'Barlow', 'Lato', sans-serif;
 }
 
-nav a {
-    text-transform: uppercase;
-    font-family: "Barlow";
-}
-
 /*-------------Terms-----------*/
+
+#geo-logo {
+    font-size: xx-large;
+}
 
 .alphabet a {
     font-size: xx-large;
-    font-family: 'Barlow';
 }
 
 /*-------------Buttons-----------*/
