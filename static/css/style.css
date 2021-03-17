@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap');
 
 /*-------------Base.html-----------*/
 
 body {
-    background-image: url("../images/rock_foliation_texture.jpg");
+    background-image: url("../images/rock-foliation-texture.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
+    font-family: 'Barlow', 'Lato', sans-serif;
 }
 
-
-.flash-message {
-    line-height: 2;
-    color: lightslategray;
+nav a {
+    text-transform: uppercase;
+    font-family: "Barlow";
 }
+
+/*-------------Terms-----------*/
+
+.alphabet a {
+    font-size: xx-large;
+    font-family: 'Barlow';
+}
+
+/*-------------Buttons-----------*/
 
 .btn-small {
     margin: 5px;
@@ -20,4 +30,11 @@ body {
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
+}
+
+/*-------------Flash messages-----------*/
+
+.flash-message {
+    line-height: 2;
+    color: lightslategray;
 }

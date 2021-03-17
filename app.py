@@ -19,12 +19,22 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+"""
+Pulls terms from the geoTerms collection in database
+"""
+
+
 @app.route("/")
 @app.route("/get_geoTerms")
 def get_geoTerms():
     # Sorts terms alphabetically
     geoTerms = list(mongo.db.geoTerms.find().sort("term"))
     return render_template("terms.html", geoTerms=geoTerms)
+
+
+"""
+Registers a new user and adds to user collection in database
+"""
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -52,6 +62,11 @@ def register():
     return render_template("register.html")
 
 
+"""
+Allows users to log in to site
+"""
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -63,10 +78,10 @@ def login():
             # Checks if hashed password matches user password
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
                         request.form.get("username")))
-                    return redirect(url_for(
+                return redirect(url_for(
                         "profile", username=session["user"]))
             else:
                 # Password incorrect
@@ -81,6 +96,11 @@ def login():
     return render_template("login.html")
 
 
+"""
+User profile page
+"""
+
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # get the session user's username from db
@@ -93,12 +113,22 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+"""
+Logs user out of their profile
+"""
+
+
 @app.route("/logout")
 def logout():
     # removes user from session cookies once logged out
     flash("You have logged out.")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+"""
+Allows users to add new terms to the database
+"""
 
 
 @app.route("/add_term", methods=["GET", "POST"])
@@ -118,6 +148,11 @@ def add_term():
     return render_template("add_term.html")
 
 
+"""
+Allows users to edit existing terms in the database
+"""
+
+
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
     # allows users to edit existing terms and definitions
@@ -132,6 +167,11 @@ def edit_term(term_id):
 
     term = mongo.db.geoTerms.find_one({"_id": ObjectId(term_id)})
     return render_template("edit_term.html", term=term)
+
+
+"""
+Allows users to delete existing terms in the database
+"""
 
 
 if __name__ == "__main__":
