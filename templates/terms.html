@@ -51,7 +51,10 @@
 <!--Geodictionary-->
 
 <div id="a" class="section scrollspy">
-    <h3 class="grey-text">A</h3>
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">A</h3>
+    </div>
+    
 </div>
     <!--Searches database for term in collection called geoTerms-->
     {% for geology_term in geoTerms %}
@@ -86,7 +89,7 @@
     <ul class="collapsible">
         {% for geology_term in geoTerms %}
         <li>
-            <div class="collapsible-header white-text light-green darken-4">
+            <div class="collapsible-header white-text grey darken-1">
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
                     {% if session.user|lower == geology_term.created_by|lower %}
@@ -100,7 +103,7 @@
                 </div>
                 <strong>{{ geology_term.letter}}</strong>
             </div>
-            <div class="collapsible-body">
+            <div class="collapsible-body grey lighten-2">
                 <strong>{{ geology_term.geology_term}}</strong>
                 <p>{{ geology_term.definition}}</p>
                 <p><em>by: {{ geology_term.created_by }}</em></p>
