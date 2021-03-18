@@ -15,12 +15,12 @@ body {
     text-transform: uppercase;
 }
 
-.headline {
-    font-size: 30px;
-}
-
 .alphabet a {
     font-size: xx-large;
+}
+
+.card .card-content {
+    padding: 10px;
 }
 
 /*-------------Buttons-----------*/
