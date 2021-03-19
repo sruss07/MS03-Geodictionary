@@ -5,7 +5,6 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
-
 if os.path.exists("env.py"):
     import env
 
@@ -165,8 +164,8 @@ def edit_term(geology_term_id):
         mongo.db.geoTerms.update({"_id": ObjectId(geology_term_id)}, submit)
         flash("Thanks, geology term and definition updated")
 
-    geology_term = mongo.db.geoTerms.find_one({"_id": ObjectId(geology_term_id)})
-    return render_template("edit_term.html", geology_term=geology_term)
+    term = mongo.db.geoTerms.find_one({"_id": ObjectId(geology_term_id)})
+    return render_template("edit_term.html", term=term)
 
 
 """
