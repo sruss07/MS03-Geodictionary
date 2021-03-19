@@ -164,8 +164,8 @@ def edit_term(geology_term_id):
         mongo.db.geoTerms.update({"_id": ObjectId(geology_term_id)}, submit)
         flash("Thanks, geology term and definition updated")
 
-    term = mongo.db.geoTerms.find_one({"_id": ObjectId(geology_term_id)})
-    return render_template("edit_term.html", term=term)
+    geoTerm = mongo.db.geoTerms.find_one({"_id": ObjectId(geology_term_id)})
+    return render_template("edit_term.html", geoTerm=geoTerm)
 
 
 """
