@@ -56,7 +56,6 @@
     </div>
     
 
-
     <ul class="collapsible">
         {% for geoTerm in geoTerms %}
         <li>
@@ -65,7 +64,7 @@
                     <i class="fas fa-caret-down"></i>
                     {% if session.user|lower == geoTerm.created_by|lower %}
                         <a href="" class="btn-small green accent-4">Done</a>
-                        <a href="{{ url_for('edit_term', geoTerms_id=geology_term._id) }}"
+                        <a href="{{ url_for('edit_term', geoTerm_id=geology_term._id) }}"
                             class="btn-small light-blue lighten-1">Edit</a>
                     {% endif %}
                 </div>
