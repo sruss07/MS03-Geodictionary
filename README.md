@@ -45,4 +45,9 @@ The aim of this project is to create and provide a comprehensive geology and ear
 
 - As a frequent user I want all the requirements of a new and returning user.
 - As a frequent user, going forward I would like to be able to interact with other users on the site on a social level.
-- As a frequent user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
+- As a frequent user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc.
+
+### Admin Users
+
+- As an Admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site.
+- As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary.
