@@ -53,3 +53,41 @@ The aim of this project is to create and provide a comprehensive geology and ear
 - As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary.
 - As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts.
 - As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users.
+
+## UX
+
+This website project will target geology enthisiasts of all levels. The main focus is on providing a fluid and structured dictionary of as many geology and earth science terms and definitions as possible.
+
+### 1. Strategy
+
+#### Project and User Goals
+
+- Provide an easy to navigate dictionary for cataloguing geology and earth science terms and associated definitions.
+
+- Provide new user accounts to enable users to login and access the dictionary
+- Provide an admin account to enable an admin to login and manage the site
+- Design backend functionality focussed on defensive design
+
+- Design frontend UX for:
+  - Clean and intuitive navigation
+  - Responsiveness for use on mobile phone and tablet devices
+
+### 2. Scope
+
+- Project utilises my current coding skill-set of HTML, CSS, JavaScript, Python, Flask and MongoDB
+- Allow users to add new content
+- Allow users to amend content which they added
+- Allow users to search existing content
+- Allow users to read existing content
+- Allow Admin to create, Read, Update and Delete content
+
+### 3. Structure
+
+The overall structure is designed for ease of navigation to each section
+
+- Top navigation menu containing Home, Login, Add Term and Profile links
+- Side navigation menu on smaller screens containing the same links as the top navigation menu
+- Once logged in users will see Profile and Logout links
+
+### 4. Skeleton
+
