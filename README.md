@@ -49,5 +49,7 @@ The aim of this project is to create and provide a comprehensive geology and ear
 
 ### Admin Users
 
-- As an Admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site.
+- As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site.
 - As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary.
+- As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts.
+- As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users.
