@@ -21,7 +21,7 @@ Site deployed on Heroku [HERE](https://XXXXX.herokuapp.com/)
 
 ## Overview
 
-The aim of this project is to create and provide a comprehensive geology and earth sciences dictionary that provides a resource that is accessible and visually appealing to all experience levels from geology experts, to experienced amateurs, through to complete beginners. Interested users can register with the site, allowing them to add new terrms and definitions and edit their own entries. A search facility allows users to search existing terms and definitions.
+The aim of this project is to create and provide a comprehensive geology and earth sciences dictionary that provides a resource that is accessible and visually appealing to all experience levels from geology experts, to experienced amateurs, through to complete beginners. Interested users can register with the site, allowing them to add new terrms and definitions and edit their own entries. A search facility allows users to search existing terms and definitions
 
 > [Back to Top](#table-of-contents) 
 
@@ -29,40 +29,40 @@ The aim of this project is to create and provide a comprehensive geology and ear
 
 ### New Users
 
-- As a new user I want to be presented with a simple, enjoyable and easy to use site, that is also visually appealing.
-- As a new user I want to be able to navigate around the site with ease.
-- As a new user I want to be able to easily find the geological term I am looking for, via an alphabetical ordering system.
-- As a new user I would like the option to add to the dictionary of geological terms.
-- As a new user I want to have access to the geological terms/definitions that I have previously created and have the option to edit them.
-- As a new user I want to enjoy using the site enough to want to return.
+- As a new user I want to be presented with a simple, enjoyable and easy to use site, that is also visually appealing
+- As a new user I want to be able to navigate around the site with ease
+- As a new user I want to be able to easily find the geological term I am looking for, via an alphabetical ordering system
+- As a new user I would like the option to add to the dictionary of geological terms
+- As a new user I want to have access to the geological terms/definitions that I have previously created and have the option to edit them
+- As a new user I want to enjoy using the site enough to want to return
 
 ### Returning Users
 
-- As a returning user I want all the requirements of a new user.
-- As a returning user I want to be able to see any new geological terms that have been added in a logical order.
+- As a returning user I want all the requirements of a new user
+- As a returning user I want to be able to see any new geological terms that have been added in a logical order
 
 ### Frequent Users
 
-- As a frequent user I want all the requirements of a new and returning user.
-- As a frequent user, going forward I would like to be able to interact with other users on the site on a social level.
-- As a frequent user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc.
+- As a frequent user I want all the requirements of a new and returning user
+- As a frequent user, going forward I would like to be able to interact with other users on the site on a social level
+- As a frequent user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
 
 ### Admin Users
 
-- As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site.
-- As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary.
-- As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts.
-- As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users.
+- As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site
+- As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary
+- As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts
+- As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users
 
 ## UX
 
-This website project will target geology enthisiasts of all levels. The main focus is on providing a fluid and structured dictionary of as many geology and earth science terms and definitions as possible.
+This website project will target geology enthisiasts of all levels. The main focus is on providing a fluid and structured dictionary of as many geology and earth science terms and definitions as possible
 
 ### 1. Strategy
 
 #### Project and User Goals
 
-- Provide an easy to navigate dictionary for cataloguing geology and earth science terms and associated definitions.
+- Provide an easy to navigate dictionary for cataloguing geology and earth science terms and associated definitions
 
 - Provide new user accounts to enable users to login and access the dictionary
 - Provide an admin account to enable an admin to login and manage the site
@@ -91,3 +91,32 @@ The overall structure is designed for ease of navigation to each section
 
 ### 4. Skeleton
 
+- Navigation bar - menu with links pointing to each page
+- Home Page - intro headline, alphabet menu and alphabetically sorted terms
+- Register Page - form with fields to create new user and user password
+- Login Page - form with fields for user and password
+- Add Term Page - form with 'Add Term' and 'Add Definition' fields
+- Edit Term Page - form allowing users to edit their own dictionary entries
+- Profile Page - banner showing user name of currently logged in user
+
+### 5. Surface
+
+The overall UX is clean and consistent and offers the user a site which should be easy to navigate and a pleasure to use, encouraging users to return multiple times
+
+#### Colours
+
+The colour pallette was chosen to reflect colours which are typical within the matrix of geological features and rocks 
+
+#### Typography
+
+- "Barlow" font (with fall-back font of Sans-Serif) is used for heading and body content
+
+#### Images
+
+- I have chosen to only use a single image with this project. The image has been utilised as a background image for each page
+
+#### Design Choices
+
+- As the project developed, the look and layout began to deviate slightly away from my initial wireframe designs. The core design is still similar with extra links, pages etc added
+
+> [Back to Top](#table-of-contents)
