@@ -141,27 +141,27 @@ The colour pallette was chosen to reflect colours which are typical within the m
 
 ### 1. Languages
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406417/HTML5_Logo.jpg) [HTML5](https://en.wikipedia.org/wiki/HTML5)
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406417/logos/HTML5_Logo.jpg) [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406447/CSS3_logo.png) [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406447/logos/CSS3_logo.png) [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406494/javascript-logo.jpg) [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406494/logos/javascript-logo.jpg) [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406515/Python-logo.png) [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406515/logos/Python-logo.png) [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### 2. Integration
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406555/materialize-logo.png) [Materialize](https://materializecss.com/) - by linking via [Materialize CDN](https://materializecss.com/getting-started.html) to HTML Doc
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406555/logos/materialize-logo.png) [Materialize](https://materializecss.com/) - by linking via [Materialize CDN](https://materializecss.com/getting-started.html) to HTML Doc
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406583/font_awesome_logo.png) [FontAwesome](https://fontawesome.com/) Icons for Social Media links
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406583/logos/font_awesome_logo.png) [FontAwesome](https://fontawesome.com/) Icons for Social Media links
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406609/google-fonts-logo.jpg) [Google Fonts](https://fonts.google.com/) - Overall Typography import
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406609/logos/google-fonts-logo.jpg) [Google Fonts](https://fonts.google.com/) - Overall Typography import
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406635/jquery.logo.jpg) [jQuery](https://jquery.com/) - JavaScript library
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406635/logos/jquery.logo.jpg) [jQuery](https://jquery.com/) - JavaScript library
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616408528/Flask-logo-01.jpg) [Flask](https://flask.palletsprojects.com/en/1.1.x/) Micro web framework written in Python
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616408528/logos/Flask-logo-01.jpg) [Flask](https://flask.palletsprojects.com/en/1.1.x/) Micro web framework written in Python
 
-![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406685/mongodb-logo.png) [MongoDB](https://www.mongodb.com/) NoSQL database program, using JSON-like documents
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406685/logos/mongodb-logo.png) [MongoDB](https://www.mongodb.com/) NoSQL database program, using JSON-like documents
 
 ### 3. Dependencies
 
@@ -173,9 +173,11 @@ The colour pallette was chosen to reflect colours which are typical within the m
 
 ### 4. Workspace, Version Control, Repository storage and Deployment
 
-![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518772/Logos/git-50_znskan.png) [Git](https://git-scm.com/) - Distributed Version Control tool to store versions of files and track changes
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616409081/logos/gitpod_logo.png) [Gitpod](https://www.gitpod.io/) - Main workspace
 
-![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518773/Logos/github-50_ixwpch.png) [GitHub](https://github.com/) - A cloud-based hosting service to manage Git repositories
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616409188/Git-logo.png) [Git](https://git-scm.com/) - Distributed Version Control tool to store versions of files and track changes
 
-![Image](https://res.cloudinary.com/jimlynx/image/upload/v1605957602/Logos/heroku50.png) [Heroku](https://heroku.com) - Container-based cloud platform for deployment and running of apps
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616409143/logos/GitHub-logo.png) [GitHub](https://github.com/) - A cloud-based hosting service to manage Git repositories
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616409243/logos/heroku_logo.png) [Heroku](https://heroku.com) - Container-based cloud platform for deployment and running of apps
 
