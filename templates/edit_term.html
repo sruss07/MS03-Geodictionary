@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="white-text light-green darken-4 center-align">Edit Term & Definition</h3>
+<h3 class="white-text grey darken-1 center-align">Edit Term & Definition</h3>
 
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
         <!--Add term field-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-green-text darken-4">
+                <i class="fas fa-pencil-alt prefix grey-text darken-4">
                 </i>
                 <input id="term" name="term" minlength="2" maxlength="70"       type="text" class="validate" required>
                 <label for="term">Add Term</label>
@@ -17,7 +17,7 @@
         <!--Add definition field-->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-green-text darken-4">
+                <i class="fas fa-align-left prefix grey-text darken-4">
                 </i>
                     <textarea id="definition" name="definition" minlength="5" maxlength="750"  class="materialize-textarea validate" required></textarea>
                 <label for="definition">Add Definition</label>
