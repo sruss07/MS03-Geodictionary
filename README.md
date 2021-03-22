@@ -120,3 +120,62 @@ The colour pallette was chosen to reflect colours which are typical within the m
 - As the project developed, the look and layout began to deviate slightly away from my initial wireframe designs. The core design is still similar with extra links, pages etc added
 
 > [Back to Top](#table-of-contents)
+
+## Features
+
+### Existing Features
+
+- Designed with HTML5, CSS3, JavaScript, Python3, Flask, MongoDB and Materialize
+- Responsive Materialize Bootstrap Navigation bar
+- Home/Landing page with redirection links to Register page and Login page
+
+### Features Left to Implement
+
+- Integrate functionality to the Add Terms form to allow users to upload photographs when submitting new terms and definitions
+- Add social channels to allow communication between users
+- Add links to merchandise and trip websites
+
+> [Back to Top](#table-of-contents) 
+
+## Technologies Used
+
+### 1. Languages
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406417/HTML5_Logo.jpg) [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406447/CSS3_logo.png) [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406494/javascript-logo.jpg) [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406515/Python-logo.png) [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### 2. Integration
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406555/materialize-logo.png) [Materialize](https://materializecss.com/) - by linking via [Materialize CDN](https://materializecss.com/getting-started.html) to HTML Doc
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406583/font_awesome_logo.png) [FontAwesome](https://fontawesome.com/) Icons for Social Media links
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406609/google-fonts-logo.jpg) [Google Fonts](https://fonts.google.com/) - Overall Typography import
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406635/jquery.logo.jpg) [jQuery](https://jquery.com/) - JavaScript library
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616408528/Flask-logo-01.jpg) [Flask](https://flask.palletsprojects.com/en/1.1.x/) Micro web framework written in Python
+
+![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616406685/mongodb-logo.png) [MongoDB](https://www.mongodb.com/) NoSQL database program, using JSON-like documents
+
+### 3. Dependencies
+
+- [Pymongo](https://pypi.org/project/pymongo/) and [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) To connect Python and Flask to the MongoDB database
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) WSGI (Web Server Gateway Interface) for Python
+- [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) Templating language for Python
+- [dnspython](https://www.dnspython.org/) DNS toolkit for Python
+- [autopep8](https://pypi.org/project/autopep8/) Python Code formatter
+
+### 4. Workspace, Version Control, Repository storage and Deployment
+
+![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518772/Logos/git-50_znskan.png) [Git](https://git-scm.com/) - Distributed Version Control tool to store versions of files and track changes
+
+![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518773/Logos/github-50_ixwpch.png) [GitHub](https://github.com/) - A cloud-based hosting service to manage Git repositories
+
+![Image](https://res.cloudinary.com/jimlynx/image/upload/v1605957602/Logos/heroku50.png) [Heroku](https://heroku.com) - Container-based cloud platform for deployment and running of apps
+
