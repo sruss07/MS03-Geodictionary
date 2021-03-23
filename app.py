@@ -27,8 +27,8 @@ Pulls terms from the geoTerms collection in database
 @app.route("/get_geoTerms")
 def get_geoTerms():
     # Sorts terms alphabetically
-    geoTerm = list(mongo.db.geoTerms.find().sort("geology_term"))
-    return render_template("terms.html", geoTermm=geoTerm)
+    geoTerms = list(mongo.db.geoTerms.find().sort("geology_term"))
+    return render_template("terms.html", geoTerms=geoTerms)
 
 
 """
@@ -135,7 +135,7 @@ def add_term():
     # allows users to add new terms and definitions
     if request.method == "POST":
         geoTerms = {
-            "geology_term": request.form.get("geologyTerm"),
+            "geology_term": request.form.get("geology_term"),
             "definition": request.form.get("definition"),
             "created_by": session["user"]
         }
@@ -143,7 +143,7 @@ def add_term():
         flash("Thanks, new geology term and definition added")
         return redirect(url_for("get_geoTerms"))
 
-    geoTerms = mongo.db.geoTerms.find().sort("geologyTerm", 1)
+    geoTerms = mongo.db.geoTerms.find().sort("geology_term", 1)
     return render_template("add_term.html")
 
 
@@ -152,25 +152,32 @@ Allows users to edit existing terms in the database
 """
 
 
-@app.route("/edit_term/<geologyTerm_id>", methods=["GET", "POST"])
-def edit_term(geologyTerm_id):
+@app.route("/edit_term/<term_id>", methods=["GET", "POST"])
+def edit_term(term_id):
     # allows users to edit existing terms and definitions
     if request.method == "POST":
-        submit = {
-            "geology_term": request.form.get("geologyTerm"),
+        geoTerms = {
+            "geology_term": request.form.get("geology_term"),
             "definition": request.form.get("definition"),
             "created_by": session["user"]
         }
-        mongo.db.geoTerms.update({"_id": ObjectId(geologyTerm_id)}, submit)
+        mongo.db.geoTerms.update({"_id": ObjectId(term_id)}, geoTerms)
         flash("Thanks, geology term and definition updated")
 
-    geoTerm = mongo.db.geoTerms.find_one({"_id": ObjectId(geologyTerm_id)})
-    return render_template("edit_term.html", geoTerm=geoTerm)
+    term = mongo.db.geoTerms.find_one({"_id": ObjectId(term_id)})
+    return render_template("edit_term.html", term=term)
 
 
 """
 Allows users to delete existing terms in the database
 """
+
+
+@app.route("/delete_term/<term_id>")
+def delete_term(term_id):
+    mongo.db.geoTerms.remove({"_id": ObjectId(term_id)})
+    flash("Thanks, geology term and definition deleted.")
+    return redirect(url_for("get_terms"))
 
 
 if __name__ == "__main__":
