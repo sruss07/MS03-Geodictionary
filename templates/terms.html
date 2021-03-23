@@ -54,32 +54,814 @@
     <div class="card grey darken-1">
         <h3 class="white-text center-align">A</h3>
     </div>
-    
+</div>
 
-    <ul class="collapsible">
-        {% for geoTerm in geoTerms %}
-        <li>
-            <div class="collapsible-header white-text grey darken-1">
-                <div class="col s3">
-                    <i class="fas fa-caret-down"></i>
-                    {% if session.user|lower == geoTerm.created_by|lower %}
-                        <a href="" class="btn-small green accent-4">Done</a>
-                        <a href="{{ url_for('edit_term', geoTerm_id=geology_term._id) }}"
-                            class="btn-small light-blue lighten-1">Edit</a>
-                    {% endif %}
-                </div>
-                <div class="col s9">
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'A' or 'a'-->
+        {% if (term.geology_term[0] == "A") or (term.geology_term[0] == "a") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-a"></i> <em id="hide-definition-a">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
 
-                </div>
-                <strong>{{ geoTerm.letter}}</strong>
-            </div>
-            <div class="collapsible-body grey lighten-2">
-                <strong>{{ geoTerm.geology_term}}</strong>
-                <p>{{ geoTerm.definition}}</p>
-                <p><em>by: {{ geoTerm.created_by }}</em></p>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+<div id="b" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">B</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'B' or 'b'-->
+        {% if (term.geology_term[0] == "B") or (term.geology_term[0] == "b") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-b"></i> <em id="hide-definition-b">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="c" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">C</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'C' or 'c'-->
+        {% if (term.geology_term[0] == "C") or (term.geology_term[0] == "c") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-c"></i> <em id="hide-definition-c">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="d" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">D</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'D' or 'c'-->
+        {% if (term.geology_term[0] == "D") or (term.geology_term[0] == "d") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-d"></i> <em id="hide-definition-d">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="e" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">E</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'E' or 'e'-->
+        {% if (term.geology_term[0] == "E") or (term.geology_term[0] == "e") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-e"></i> <em id="hide-definition-e">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="f" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">F</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'F' or 'f'-->
+        {% if (term.geology_term[0] == "F") or (term.geology_term[0] == "f") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-f"></i> <em id="hide-definition-f">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="g" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">G</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'G' or 'g'-->
+        {% if (term.geology_term[0] == "G") or (term.geology_term[0] == "g") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-g"></i> <em id="hide-definition-g">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="h" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">H</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'H' or 'h'-->
+        {% if (term.geology_term[0] == "H") or (term.geology_term[0] == "h") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-h"></i> <em id="hide-definition-h">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="i" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">I</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'I' or 'i'-->
+        {% if (term.geology_term[0] == "I") or (term.geology_term[0] == "i") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-i"></i> <em id="hide-definition-i">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="j" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">J</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'J' or 'j'-->
+        {% if (term.geology_term[0] == "J") or (term.geology_term[0] == "j") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-j"></i> <em id="hide-definition-j">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="k" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">K</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'K' or 'k'-->
+        {% if (term.geology_term[0] == "K") or (term.geology_term[0] == "k") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-k"></i> <em id="hide-definition-k">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="l" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">L</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'L' or 'l'-->
+        {% if (term.geology_term[0] == "L") or (term.geology_term[0] == "l") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-l"></i> <em id="hide-definition-l">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="m" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">M</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'M' or 'm'-->
+        {% if (term.geology_term[0] == "M") or (term.geology_term[0] == "m") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-m"></i> <em id="hide-definition-m">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="n" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">N</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'N' or 'n'-->
+        {% if (term.geology_term[0] == "N") or (term.geology_term[0] == "n") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-n"></i> <em id="hide-definition-n">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="o" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">O</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'O' or 'o'-->
+        {% if (term.geology_term[0] == "O") or (term.geology_term[0] == "o") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-o"></i> <em id="hide-definition-o">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="p" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">P</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'P' or 'p'-->
+        {% if (term.geology_term[0] == "P") or (term.geology_term[0] == "p") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-p"></i> <em id="hide-definition-p">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="q" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">Q</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'Q' or 'q'-->
+        {% if (term.geology_term[0] == "Q") or (term.geology_term[0] == "q") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-q"></i> <em id="hide-definition-q">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="r" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">R</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'R' or 'r'-->
+        {% if (term.geology_term[0] == "R") or (term.geology_term[0] == "r") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-r"></i> <em id="hide-definition-r">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="s" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">S</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'S' or 's'-->
+        {% if (term.geology_term[0] == "S") or (term.geology_term[0] == "s") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-s"></i> <em id="hide-definition-s">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="t" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">T</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'T' or 't'-->
+        {% if (term.geology_term[0] == "T") or (term.geology_term[0] == "t") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-t"></i> <em id="hide-definition-t">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="u" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">U</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'U' or 'u'-->
+        {% if (term.geology_term[0] == "U") or (term.geology_term[0] == "u") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-u"></i> <em id="hide-definition-u">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="v" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">V</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'V' or 'v'-->
+        {% if (term.geology_term[0] == "V") or (term.geology_term[0] == "v") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-v"></i> <em id="hide-definition-v">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="w" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">W</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'W' or 'w'-->
+        {% if (term.geology_term[0] == "W") or (term.geology_term[0] == "w") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-w"></i> <em id="hide-definition-w">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="x" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">X</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'X' or 'x'-->
+        {% if (term.geology_term[0] == "X") or (term.geology_term[0] == "x") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-x"></i> <em id="hide-definition-x">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="y" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">Y</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'Y' or 'y'-->
+        {% if (term.geology_term[0] == "Y") or (term.geology_term[0] == "y") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-y"></i> <em id="hide-definition-y">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+<div id="z" class="section scrollspy">
+    <div class="card grey darken-1">
+        <h3 class="white-text center-align">Z</h3>
+    </div>
+</div>
+
+    <!--Searches database for geology term in collection called geoTerms-->
+    {% for term in geoTerms %}
+        <!--Sorts data where first letter is 'Z' or 'z'-->
+        {% if (term.geology_term[0] == "Z") or (term.geology_term[0] == "z") %}
+            <ul class="collapsible">
+                <li>
+                    <div class=" row collapsible-header blue-grey darken-1 white-text col s12">
+                        <div class="col s10 font-size">
+                            <i class="fas fa-caret-down white-text"></i><strong>{{ term.geology_term }}</strong> 
+                            <i class="arrow fas fa-long-arrow-alt-right" id="hide-arrow-z"></i> <em id="hide-definition-z">
+                                {{ term.definition }}</em>
+                        </div>
+                        <div class="col s3 center-align">
+                            <!--Adds name of logged in user who created entry-->
+                            {% if session.user|lower == term.created_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id)}}" class=" btn-small edit-button">
+                                Edit</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+
+    <!--Floating action button-->
+    <div class="fixed-action-btn">
+        <a href="{{ url_for('get_geoTerms') }}" class="btn-floating btn-large white">
+        <i class="fas fa-arrow-up black-text"></i>
+        </a>
+    </div>
 
 {% endblock %}
