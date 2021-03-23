@@ -27,10 +27,15 @@
         <div class="row">
             <div class="col s12 center-align">
                 <button type="submit" class="btn submit-button">
-                    Edit Existing Term <i class="fas fa-edit"></i></button>
+                    Edit Term <i class="fas fa-edit"></i></button>
+                    <!--Delete button-->
+                <a href="{{ url_for('delete_term', term_id=term._id) }}"
+                    class="btn delete-button">
+                        Delete Term<i class="fas fa-trash-alt"></i>
+                </a>
                     <!--Cancel button-->
                 <a href="{{ url_for('get_geoTerms') }}"
-                    class="btn delete-button">
+                    class="btn cancel-button">
                         Cancel <i class="fas fa-times-circle right"></i>
                 </a>
             </div>
