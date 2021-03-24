@@ -44,6 +44,47 @@ body {
     line-height: 42px;
 }
 
+/* --- Footer Settings --- */
+footer {
+    height: 4rem;
+    background-color: #546e7a;
+    display: flex;
+    margin-bottom: -1px;
+}
+
+.footer-container {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+
+/*--- Social Media icons ---*/
+.social {
+    list-style: none;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.social i {
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.social i:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 /*-------------Flash messages-----------*/
 
 .flash-message {
