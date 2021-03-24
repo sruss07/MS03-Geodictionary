@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap');
 
+h3 {
+    margin-top: 5px;
+    margin-top: 5px;
+}
+
 /*-------------Base.html-----------*/
 
 body {
@@ -9,6 +14,12 @@ body {
 }
 
 /*-------------Terms-----------*/
+
+h5 {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
 
 #geo-logo {
     font-size: 40px;
@@ -44,12 +55,29 @@ body {
     line-height: 42px;
 }
 
+.btn-large:hover {
+    background-color: rgb(197, 194, 194);
+}
+
+.btn-small:hover {
+    background-color: rgb(197, 194, 194);
+}
+
+.btn:hover {
+    background-color: rgb(197, 194, 194);
+}
+
 /* --- Footer Settings --- */
+
 footer {
     height: 4rem;
     background-color: #546e7a;
     display: flex;
-    margin-bottom: -1px;
+    margin:-80px auto 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-container {
@@ -60,8 +88,8 @@ footer {
     padding-bottom: 0;
 }
 
-
 /*--- Social Media icons ---*/
+
 .social {
     list-style: none;
     display: flex;
