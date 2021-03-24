@@ -31,6 +31,13 @@ def get_geoTerms():
     return render_template("terms.html", geoTerms=geoTerms)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    geoTerms = list(mongo.db.geoTerms.find({"$text": {"$search": query}}))
+    return render_template("terms.html", geoTerms=geoTerms)
+
+
 """
 Registers a new user and adds to user collection in database
 """
