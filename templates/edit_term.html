@@ -10,7 +10,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix grey-text darken-4">
                 </i>
-                <input id="geology_term" name="geology_term" minlength="2" maxlength="70" type="text" class="validate" required>
+                <input id="geology_term" name="geology_term" minlength="2" maxlength="70" type="text" value="{{ term.geology_term }}" class="validate" required>
                 <label for="geology_term">Edit Term</label>
             </div>
         </div>
@@ -19,7 +19,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix grey-text darken-4">
                 </i>
-                    <textarea id="definition" name="definition" minlength="5" maxlength="750"  class="materialize-textarea validate" required></textarea>
+                    <input id="definition" name="definition" minlength="5" maxlength="750" type="text" value="{{ term.definition }}" class="validate" required>
                 <label for="definition">Edit Definition</label>
             </div>
         </div>

@@ -177,7 +177,7 @@ Allows users to delete existing terms in the database
 def delete_term(term_id):
     mongo.db.geoTerms.remove({"_id": ObjectId(term_id)})
     flash("Thanks, geology term and definition deleted.")
-    return redirect(url_for("get_terms"))
+    return redirect(url_for("get_geoTerms"))
 
 
 if __name__ == "__main__":

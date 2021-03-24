@@ -31,6 +31,10 @@ body {
 
 /*-------------Buttons-----------*/
 
+.btn {
+    margin: 5px;
+}
+
 .btn-small {
     margin: 5px;
 }
