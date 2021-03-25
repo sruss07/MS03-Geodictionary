@@ -5,7 +5,7 @@
 > - [UX](#ux)
 > - [Features](#features)
 > - [Technologies Used](#technologies-used)
-> - [References for learning](#references-for-learning)
+> - [Resources for learning](#resources)
 > - [Testing](#testing)
 > - [Project barriers and solutions](#project-barriers-and-solutions)
 > - [Code validity](#code-validity)
@@ -181,3 +181,74 @@ The colour pallette was chosen to reflect colours which are typical within the m
 
 ![Image](https://res.cloudinary.com/dpagr3dzw/image/upload/t_media_lib_thumb/v1616409243/logos/heroku_logo.png) [Heroku](https://heroku.com) - Container-based cloud platform for deployment and running of apps
 
+### 5. IDE Extensions used
+
+- Auto Close Tag
+- Auto Rename Nametag
+- Bracket Pair Colorizer 2
+- Code Spellchecker
+- Beautify - Code Formatter
+- Indent-Rainbow
+- Markdown Lint
+- Python
+- JSHint
+
+> [Back to Top](#table-of-contents) 
+
+## Resources for Learning
+
+- [Code Institute Course Content](https://courses.codeinstitute.net/) - Main source of fundamental HTML, CSS, Javascript, Python, MongoDB and Heroku knowledge.
+- Code Institute **SLACK Community** - Main source of assistance
+- [Stack Overflow](https://stackoverflow.com/) - General resource.
+- [Youtube](https://www.youtube.com/) - General resource.
+- [CSS-Tricks](https://css-tricks.com/) - General resource.
+- [W3.CSS](https://www.w3schools.com/w3css/4/w3.css) - General resource.
+- [CommonMark](https://commonmark.org/help/) - For Markdown language reference.
+- [Coolors.co](https://coolors.co/) - Colour pallette generator
+- [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
+- [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
+
+> [Back to Top](#table-of-contents) 
+
+## Testing
+
+Testing documentation can be found on a separate document [HERE](static/testing/TESTING.md)
+
+## Project barriers and solutions
+
+
+
+> [Back to Top](#table-of-contents) 
+
+## Code validity
+
+- HTML - [W3C](https://validator.w3.org/) - Markup Validation
+- CSS - [W3C](https://jigsaw.w3.org/css-validator/) - Jigsaw CSS Validation
+- JavaScript - [JSHINT](https://jshint.com/) - JavaScript code warning & error check
+- Python - [Pyton Tester](https://extendsclass.com/python-tester.html) Python code syntax checker
+- TAGS - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
+
+## Version Control
+
+- Used Git for version control.
+
+### IDE
+
+- All code was written on [Gitpod](https://www.gitpod.io/)
+- The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/sruss07/MS03-Geodictionary).
+
+> [Back to Top](#table-of-contents) 
+
+## Deployment
+
+### Local Installation
+
+#### 1. Cloning the project
+
+- The code can be run locally through clone or download from the repository on [GitHub](https://github.com/sruss07/MS03-Geodictionary).
+- You can do this by opening the repository, clicking on the Code' button and selecting either 'clone or download'.
+
+    ![Image](static/images/clone_project.png)
+- The Clone option provides a URL, which you can use on your CLI with `git clone <paste url>`.
+- The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine. The files can then be uploaded to your IDE.
