@@ -252,3 +252,94 @@ Testing documentation can be found on a separate document [HERE](static/testing/
     ![Image](static/images/clone_project.png)
 - The Clone option provides a URL, which you can use on your CLI with `git clone <paste url>`.
 - The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine. The files can then be uploaded to your IDE.
+
+#### 2. Create a Virtual Environment
+
+In the Terminal window:
+
+- Navigate to the folder of the installed files with `cd <path>`
+- Create the virtual environment folder with `python -m venv venv`
+- Activate the virtual environment with `venv\Scripts\activate.bat`
+
+*Note: The above commands were used on Gitpod on Mac OS. For other IDE's and Linux, please refer to [Creation of Virtual Environments](https://docs.python.org/3/library/venv.html)*
+
+#### 3. Create Environmental Variables
+
+- Create an env.py file in the the **config** folder. In this file enter the Environmental Variables (**replace values with your own**) as follows:
+
+```python
+        import os
+
+        os.environ.setdefault("IP", "IP_ADDRESS")
+        os.environ.setdefault("PORT", "PORT")
+        os.environ.setdefault("SECRET_KEY", "SECRET_KEY")
+        os.environ.setdefault("MONGO_URI", "MONGO_URI")
+        os.environ.setdefault("MONGO_DBNAME", "MONGO_DBNAME")
+```
+
+#### 4. Create a .gitignore file
+
+- Create a file called **.gitignore** in the root directory and ensure it contains the following git exclusions:
+
+```json
+            env.py
+            __pycache__/
+```
+
+#### 5. Install project dependencies
+
+- Install project requirements by typing `pip install -r requirements.txt`
+
+#### 6. Create a database on MongoDB
+
+Register for a free account with [MongoDB](https://account.mongodb.com/account/register)
+
+- Create a new Project and call it 'MS03_Geodictionary'
+- Creater a Cluster, choose the free tier option and select your region
+- Create a new database and call it 'geoDictionary'
+- Create two Collections named 'geoTerms' and 'users' an enter key/values as follows:
+
+- **geoTerms** collection
+
+```json
+            _id: <ObjectId>
+            geology_term: "<string>"
+            definition: "<string>"
+            created_by: "<string>"
+```
+- **users** collection
+
+```json
+            _id: <ObjectId>
+            username: "<string>"
+            password: "<string>"
+```
+#### 7. Deploy locally
+
+- To run the project locally, in the terminal type `python app.py`
+- This will open a localhost address, which is provided in the CLI.
+- Either copy and paste the url shown below into a new browser tab, or hover over it and click *follow link*
+
+#### 8. Remote Deployment on Heroku
+
+[Heroku](https://www.heroku.com) is a Cloud Application Platform that enables developers to build, run, and operate applications in the cloud.
+
+Deployment process is as follows:
+
+Create a **requirements.txt** file to store depenecies of installed packages for the project. In the CLI type `pip freeze --local > requirements.txt`.
+
+Create a file named **Procfile** to declare what commands are run by the application's dynos on the Heroku platform. For this project, run by the app.py file, the Procfile should contain:`web: python app.py`
+
+- Register for a free account on the Heroku [Signup](https://signup.heroku.com/login) page.
+- On the Dashboard, click the 'New' button and select 'Create new app'.
+- Choose a name and region.
+- Under the 'Settings' tab, click on 'Config Vars' to add Configuration Variables from the env.py file (As shown in step **3. Create Environmental Variables** above). Remember to use your own credentials.
+- In your CLI terminal install Heroku by typing `npm install -g heroku`
+- Select the 'Deploy' option from the menu.
+- Under 'Deployment method' select the GitHub option to connect to your GitHub repository. Ensure GitHub Username is selected and use the search function to find the relevant repository. It is recommended using a 'main' branch as default, due to GitHub depreciating the 'master' branch name.
+- Select Automatic deploys from the main branch and click 'Deploy Branch'.
+- Click on the 'Open App' button on the top-right to open the deployed app.
+- There is no difference between the deployed version and the development version.
+
+> [Back to Top](#table-of-contents) 
+
