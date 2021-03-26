@@ -21,7 +21,7 @@ Site deployed on Heroku [HERE](https://XXXXX.herokuapp.com/)
 
 ## Overview
 
-The aim of this project is to create and provide a comprehensive geology and earth sciences dictionary that provides a resource that is accessible and visually appealing to all experience levels from geology experts, to experienced amateurs, through to complete beginners. Interested users can register with the site, allowing them to add new terrms and definitions and edit their own entries. A search facility allows users to search existing terms and definitions
+The aim of this project is to create a comprehensive geology and earth sciences dictionary that provides a resource that is accessible and visually appealing to all experience levels from geology experts, to experienced amateurs, through to complete beginners. Interested users can register with the site, allowing them to add new terrms and definitions and edit their own entries. A search facility allows users to search existing terms and definitions
 
 > [Back to Top](#table-of-contents) 
 
@@ -76,7 +76,7 @@ This website project will target geology enthisiasts of all levels. The main foc
 
 - Project utilises my current coding skill-set of HTML, CSS, JavaScript, Python, Flask and MongoDB
 - Allow users to add new content
-- Allow users to amend content which they added
+- Allow users to amend content which they previously added
 - Allow users to search existing content
 - Allow users to read existing content
 - Allow Admin to create, Read, Update and Delete content
@@ -85,9 +85,17 @@ This website project will target geology enthisiasts of all levels. The main foc
 
 The overall structure is designed for ease of navigation to each section
 
-- Top navigation menu containing Home, Login, Add Term and Profile links
-- Side navigation menu on smaller screens containing the same links as the top navigation menu
-- Once logged in users will see Profile and Logout links
+- The first page that is presented to the user is the Home page. Here users will encounter a site tagline, a browse by letter section, a search by keyword section and all existing terms, sorted into alphabetical sections
+- The Navigation bar is located across the top of the Home page. The logo is located centrally within the navigation bar, with all navigation links located to the right. The links are Home, Login, Add Term and Profile.
+- On smaller screens sizes the navigation menu translates to a side configuration containing the same links as the top navigation menu
+- The alphabetical sections include href links which enable users to navigate to gelogy terms beginning with the particular letter that the user clicks
+- The dictionary is displayed with terms below their relevant alphabetical letter. Each section is headed by a large, corresponding letter.
+- The geology term is contained within the header section of a collapsible. When clicked and collapsed, the definition will be displayed within the body section of the collapsible. The name of the user who created the entry will also be displayed here.
+- The second navigation link directs users to the Log In page. The Log In page contains a form allowing existing users to log in to their profile.
+- The third navigation link directs users to the Register page. The Register page contains a form allowing new users to resister a new account.
+- When a user is logged in to their profile, the Add Term link will appear as a fourth link in the navigation bar. This link will direct registered users to the Add Term and Definition form where new terms and definitions can be added to the dictionary.
+- Users who are logged in can also navigate to their profile page using the Profile link in the navigation bar. Here users will see a message about the purpose of the site and how they can contribute.
+- Users who are logged in will also see a Logout link in the navigation bar to allow them to log out.
 
 ### 4. Skeleton
 
