@@ -232,6 +232,8 @@ Testing documentation can be found on a separate document [HERE](static/testing/
 
 ## Code validity
 
+For full details on how the code was validated see the seperate testing document [HERE](static/testing/TESTING.md).
+
 - HTML - [W3C](https://validator.w3.org/) - Markup Validation
 - CSS - [W3C](https://jigsaw.w3.org/css-validator/) - Jigsaw CSS Validation
 - JavaScript - [JSHINT](https://jshint.com/) - JavaScript code warning & error check
