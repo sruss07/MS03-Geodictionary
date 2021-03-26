@@ -343,3 +343,18 @@ Create a file named **Procfile** to declare what commands are run by the applica
 
 > [Back to Top](#table-of-contents) 
 
+## Credits
+
+### Media
+
+- Background image downloaded from [Unsplash](https://unsplash.com/)
+- Background image courtesy of [Tim Mossholder](https://unsplash.com/@timmossholder)
+
+## Acknowledgements
+
+I would like to thank:
+- My mentor, **Gerald McBride** for his guidance and advice.
+- **Tutor Support** for always being patient, helpful and friendly when requiring assistance during the project.
+- **CI staff** and **Slack Community** for always being on-hand to answer my many questions and requests for help and guidance.
+
+> [Back to Top](#table-of-contents)
