@@ -67,6 +67,10 @@ h5 {
     background-color: rgb(197, 194, 194);
 }
 
+.fixed-action-btn {
+    padding-bottom: 75px;
+}
+
 /* --- Footer Settings --- */
 
 footer {
@@ -86,6 +90,10 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 0;
+}
+
+.clear-footer {
+    padding-bottom: 75px;
 }
 
 /*--- Social Media icons ---*/
