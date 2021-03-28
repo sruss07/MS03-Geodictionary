@@ -96,6 +96,12 @@ footer {
     padding-bottom: 75px;
 }
 
+/*--- Error page ---*/
+
+.error-btn {
+    min-width: 135px;
+}
+
 /*--- Social Media icons ---*/
 
 .social {
