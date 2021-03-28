@@ -4,31 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>404 Error Page</title>
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="card mx-auto" style="width: fit-content;">
-            <img class="card-img-top" src="{{ url_for('static', filename='images/404.png') }}"
-                alt="404 Error warning image">
-            <div class="card-body">
-                <p class="card-text">This page doesn't seem to exist at the moment!!</p>
-                <div class="break-line"></div>
-                <p>Take me back to the home page!</p>
-                <div class="mt-5 mb-3">
-                    <a href="{{ url_for('get_geoTerms') }}" class="btn btn-primary error-btn">Home</a>
+    <div class="row card-panel grey lighten-5">
+        <div class="card-image">
+            <img src="/workspace/MS03-Geodictionary/static/images/404.png" alt="404 Error warning image">
+        </div>
+        <div class="card-action center-align">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large grey darken-2 submit-button">
+                    Home <i class="fas fa-arrow-circle-right"></i>
+                    <a href="{{ url_for('get_geoTerms') }}"></a>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
