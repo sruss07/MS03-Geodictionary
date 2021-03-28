@@ -141,8 +141,10 @@ The colour pallette was chosen to reflect colours which are typical within the m
 ### Features Left to Implement
 
 - Integrate functionality to the Add Terms form to allow users to upload photographs when submitting new terms and definitions
+- Add links to relevant external sites which can provide additional information on terms within the dictionary
 - Add social channels to allow communication between users
 - Add links to merchandise and trip websites
+
 
 > [Back to Top](#table-of-contents) 
 
