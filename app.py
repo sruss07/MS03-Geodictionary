@@ -34,6 +34,8 @@ def get_geoTerms():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
+    if not query:
+        return render_template("terms.html")
     geoTerms = list(mongo.db.geoTerms.find({"$text": {"$search": query}}))
     return render_template("terms.html", geoTerms=geoTerms)
 
