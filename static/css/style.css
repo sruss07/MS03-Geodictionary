@@ -140,3 +140,21 @@ footer {
     line-height: 2;
     color: white;
 }
+
+/*-------------Media queries-----------*/
+
+@media only screen and (max-width: 320px){
+    #geo-logo {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .alphabet a {
+        font-size: x-large;
+    }
+
+    .font-size {
+        font-size: 12px;
+    }
+}
