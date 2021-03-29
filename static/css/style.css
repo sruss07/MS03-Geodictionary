@@ -102,6 +102,13 @@ footer {
     min-width: 135px;
 }
 
+.card-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /*--- Social Media icons ---*/
 
 .social {
