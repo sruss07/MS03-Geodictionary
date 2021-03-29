@@ -2,7 +2,7 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s12 m8 offset-m2">
+        <div class="col s12">
             <div class="profile card-panel grey darken-2">
                 <h3 class="white-text grey darken-2 center-align">
                     {{ username }}'s Profile
@@ -10,5 +10,35 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+    <div class="col s12">
+        <div class="card grey darken-2">
+            <div class="card-content white-text">
+                <span class="card-title center-align">Welcome!</span>
+                <p>
+                    Welcome {{ username }} to your Geodictionary profile page. Geodictinary is an online geology and earth sciences dictionary where you can add new terms and definitions and browse and search through the information that has already been added by other members.
+                </p>
+                <br>
+                <p>
+                    There are thousands of terms and definitions missing. This is where you can help us make Geodictionary the most comprehensive and complete geology and earth science reference on the web! If you know of any terms that you think should be here, then click on the button below to 'Add Term'. You can also search for your entries to edit them at any time. Simply click on the 'Edit' button where you will be able to update information as required.
+                </p>
+                <br>
+                <p>
+                    We endeavour to make this dictionary as accurate as possible. If you feel an entry has been submitted that isn't correct, we will either correct it or remove it completely. We hope you enjoy browsing and contributing towards this site.
+                </p>
+                <br>
+                <div class="row">
+                    <a href="{{ url_for('get_geoTerms') }}" class="col s12 btn-large home-button">
+                        Home <i class="fas fa-home"></i></a>
+                </div>
+                <div class="row">
+                    <a href="{{ url_for('add_term') }}" class="col s12 btn-large home-button">
+                        Add Term <i class="fas fa-plus-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

@@ -40,6 +40,10 @@ h5 {
     padding: 10px;
 }
 
+.card-content p {
+    text-align: center;
+}
+
 /*-------------Buttons-----------*/
 
 .btn {
