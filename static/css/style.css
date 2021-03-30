@@ -147,18 +147,31 @@ footer {
 
 /*-------------Media queries-----------*/
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 420px){
     #geo-logo {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .alphabet a {
-        font-size: x-large;
+        font-size: 30px;
     }
 
     .font-size {
-        font-size: 12px;
+        font-size: 15px;
     }
+
+    .alphabet a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
 }
+
+
