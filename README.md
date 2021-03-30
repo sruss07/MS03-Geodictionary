@@ -1,3 +1,5 @@
+<img src="static/images/MS3_responsive_image.png" alt="responsive screens"/>
+
 # Table of Contents
 
 > - [Overview](#overview)
@@ -120,11 +122,11 @@ The colour pallette was chosen to reflect colours which are typical within the m
 
 #### Typography
 
-- "Barlow" font (with fall-back font of Sans-Serif) is used for heading and body content
+- Main font for the site is "Barlow" (with fall-back font of Sans-Serif) which is used for heading and body content
 
 #### Images
 
-- I have chosen to only use a single image with this project. The image has been utilised as a background image for each page
+- I have chosen to only use a single image with this project. The image, which is a rock texture image, has been utilised as a background image for each page
 
 #### Design Choices
 
@@ -362,8 +364,8 @@ Create a file named **Procfile** to declare what commands are run by the applica
 
 ### Media
 
-- Background image downloaded from [Unsplash](https://unsplash.com/)
-- Background image courtesy of [Tim Mossholder](https://unsplash.com/@timmossholder)
+- The image utilised as a background for all pages is my own personal [image](static/images/rock-foliation-texture.jpg).
+
 
 ## Acknowledgements
 
