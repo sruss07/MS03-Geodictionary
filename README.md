@@ -108,6 +108,8 @@ The overall structure is designed for ease of navigation to each section
 - Edit Term Page - form allowing users to edit their own dictionary entries
 - Profile Page - banner showing user name of currently logged in user
 
+- Wireframes for mobile phones, tablets and desktops can be found here [Wireframes](static/wireframes/all-wireframes.pdf)
+
 ### 5. Surface
 
 The overall UX is clean and consistent and offers the user a site which should be easy to navigate and a pleasure to use, encouraging users to return multiple times. I utilised the Materialize material design bootstrap framework to achieve this
