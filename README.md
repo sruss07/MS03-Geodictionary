@@ -120,6 +120,9 @@ The overall UX is clean and consistent and offers the user a site which should b
 
 The colour pallette was chosen to reflect colours which are typical within the matrix of geological features and rocks 
 
+[Colour Palette - Coolors.co](https://coolors.co/fafafa-e0e0e0-bdbdbd-616161-546e7a-009688)
+![Image](static/images/MS3-colour-pallette.png)
+
 #### Typography
 
 - Main font for the site is "Barlow" (with fall-back font of Sans-Serif) which is used for heading and body content
