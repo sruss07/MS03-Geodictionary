@@ -1,3 +1,5 @@
+# Milestone 3 Project - Geodictionary
+
 <img src="static/images/MS3_responsive_image.png" alt="responsive screens"/>
 
 # Table of Contents
