@@ -237,7 +237,7 @@ Testing documentation can be found on a separate document [HERE](static/testing/
 
 ## Project barriers and solutions
 
-
+- My search function worked perfectly when searching for terms, when returning no results found, and when resetting the search. However, when a search term was returned, I found that, if it appeared in multiple terms, then these terms remained located under the div which contained each alphabetical letter. The effect I desired was for all returned terms to be filtered to the top, below the search form, so they could be easily viewed, and for the divs containing the alphabetical letters to be hidden. To achieve the desired effect I 
 
 > [Back to Top](#table-of-contents) 
 
