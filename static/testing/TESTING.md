@@ -54,4 +54,9 @@ The search function for my app is located on the home page. The search function 
 - Clicked submit button with no entries in search field - form prompts user to fill in the search field
 - Entered valid keyword into search field and page returns relevant result(s)containing that keyword
 - Entered invalid keyword and page returns the message: 'No results found'
+- Clicked Reset button and this clears the search field to default
+
+![Screenshot of home page search form](../images/search_form.png)
+
+> [Back to Top](#table-of-contents) 
 
