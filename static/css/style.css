@@ -4,7 +4,8 @@
 
 body {
     background-image: url("../images/rock-foliation-texture.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
     font-family: 'Barlow', 'Lato', sans-serif;
 }
 
