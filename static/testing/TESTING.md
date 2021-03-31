@@ -74,7 +74,6 @@ The search function for my app is located on the home page. The search function 
 ### Login page
 
 - Clicked **Log Out** button from Navigation Menu
-
 - Successfully logs user out of their session
 - Redirects user to the Home page
 - Relevant Flash confirmation message displays correctly
@@ -94,3 +93,8 @@ The search function for my app is located on the home page. The search function 
 ### Footer
 
 - Tested all social media icon links to ensure they open correctly in a new browser tab
+
+### Error page
+
+- Entered a series of invalid url suffixes and user is redirected to 404 error page.
+- Tested button on 404 error page to ensure it links back to the Home page
