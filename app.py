@@ -131,7 +131,7 @@ def logout():
     # removes user from session cookies once logged out
     flash("You have logged out.")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("get_geoTerms"))
 
 
 """
