@@ -19,7 +19,7 @@
 > - [Acknowledgments](#acknowledgments)
 > - [Support](#support)
 
-Site deployed on Heroku [HERE](https://XXXXX.herokuapp.com/)
+Site deployed on Heroku [HERE](https://geodictionary-ms3.herokuapp.com/)
 
 **Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.**
 
