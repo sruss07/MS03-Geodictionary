@@ -35,3 +35,23 @@ Passed code through [JSHint](https://jshint.com/)
 - JSHint flags Jquery $ symbol as undefined variable - safely ignored.
 
 ![Screenshot of JavaScript Validation](../testing/js_validation.png)
+
+### Python
+
+Autopepe8 installed as a dependency for checking code as written
+All Python code passed through [ExtendsClass Python Syntax Checker](https://extendsclass.com/python-tester.html)
+
+- [app.py](../../app.py)
+
+![Screenshot of app.py code validation test](../testing/app_py_validation.png)
+
+> [Back to Top](#table-of-contents) 
+
+## Search Function
+
+The search function for my app is located on the home page. The search function can be used by registered users after they log in to the site, and it can also be used by users without logging on or registering.
+
+- Clicked submit button with no entries in search field - form prompts user to fill in the search field
+- Entered valid keyword into search field and page returns relevant result(s)containing that keyword
+- Entered invalid keyword and page returns the message: 'No results found'
+
