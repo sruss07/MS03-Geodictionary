@@ -60,3 +60,37 @@ The search function for my app is located on the home page. The search function 
 
 > [Back to Top](#table-of-contents) 
 
+## Manual Site Testing
+
+### Navigation
+
+- Checked all navigation links from menu to ensure they direct to relevent pages
+
+### Home page
+
+- Clicked Login link and redirected to Login page
+- Clicked Register link and redireced to Register page
+
+### Login page
+
+- Clicked **Log Out** button from Navigation Menu
+
+- Successfully logs user out of their session
+- Redirects user to the Home page
+- Relevant Flash confirmation message displays correctly
+
+### Register page
+
+- Completed register form fields and successfully registered a new user
+- Redirects user to the Profile page
+- Relevant Flash confirmation message displays correctly
+
+### Add Term page
+
+- Completed new term and definition form fields and successfully created a new dictionary entry
+- Redirects user to the Home page
+- Relevant Flash confirmation message displays correctly
+
+### Footer
+
+- Tested all social media icon links to ensure they open correctly in a new browser tab
