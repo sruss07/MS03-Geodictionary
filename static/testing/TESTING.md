@@ -56,7 +56,7 @@ The search function for my app is located on the home page. The search function 
 - Entered invalid keyword and page returns the message: 'No results found'
 - Clicked Reset button and this clears the search field to default
 
-![Screenshot of home page search form](../images/search_form.png)
+![Screenshot of home page search form](../testing/search_form.png)
 
 > [Back to Top](#table-of-contents) 
 
@@ -66,10 +66,15 @@ The search function for my app is located on the home page. The search function 
 
 - Checked all navigation links from menu to ensure they direct to relevent pages
 
+
+
+
 ### Home page
 
 - Clicked Login link and redirected to Login page
 - Clicked Register link and redireced to Register page
+
+![Screenshot of logged out navbar](../testing/navbar_logged_out.png)
 
 ### Login page
 
@@ -78,11 +83,16 @@ The search function for my app is located on the home page. The search function 
 - Redirects user to the Home page
 - Relevant Flash confirmation message displays correctly
 
+![Screenshot of logged out navbar](../testing/navbar_logged_in.png)
+![Screenshot of login page](../testing/login_page.png)
+
 ### Register page
 
 - Completed register form fields and successfully registered a new user
 - Redirects user to the Profile page
 - Relevant Flash confirmation message displays correctly
+
+![Screenshot of login page](../testing/register_page.png)
 
 ### Add Term page
 
@@ -90,11 +100,17 @@ The search function for my app is located on the home page. The search function 
 - Redirects user to the Home page
 - Relevant Flash confirmation message displays correctly
 
+![Screenshot of login page](../testing/add_term_page.png)
+
 ### Footer
 
 - Tested all social media icon links to ensure they open correctly in a new browser tab
+
+![Screenshot of footer](../testing/footer.png)
 
 ### Error page
 
 - Entered a series of invalid url suffixes and user is redirected to 404 error page.
 - Tested button on 404 error page to ensure it links back to the Home page
+
+![Screenshot of footer](../testing/error_404.png)
