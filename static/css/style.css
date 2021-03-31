@@ -90,8 +90,6 @@ footer {
 
 .footer-container {
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 0;
 }
@@ -118,8 +116,6 @@ footer {
 .social {
     list-style: none;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: center;
     width: 100%;
     margin: 0;
@@ -133,8 +129,6 @@ footer {
 }
 
 .social i:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -171,7 +165,6 @@ footer {
     h5 {
         font-size: 20px;
     }
-
 }
 
 
