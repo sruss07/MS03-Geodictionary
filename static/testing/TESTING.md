@@ -66,9 +66,6 @@ The search function for my app is located on the home page. The search function 
 
 - Checked all navigation links from menu to ensure they direct to relevent pages
 
-
-
-
 ### Home page
 
 - Clicked Login link and redirected to Login page
@@ -114,3 +111,31 @@ The search function for my app is located on the home page. The search function 
 - Tested button on 404 error page to ensure it links back to the Home page
 
 ![Screenshot of footer](../testing/error_404.png)
+
+> [Back to Top](#table-of-contents)
+
+## Responsive Tests
+
+- DevTools - Devices tested across a range of widths:
+  - Mobiles: iPhone5(320px) | Samsung S5 (360px) | iPhone 6/7/8/X (375px) | iPhone 6/7/8 Plus (414px)
+  - Tablets: iPad (768px) | iPad Pro (1024px)
+  - Desktops: Laptop (1200px) | Large Desktop screen (1920px)
+
+- Viewed on physical devices:
+  - Mobiles: small phone (320px) | large phone (414px)
+  - Tablets: large tablet (768px)
+  - Desktops: Medium laptop (1366px) | Large Desktop screen (1920px)
+
+- Viewed site on on various browsers: >   
+  - Google Chrome
+  - Mozilla Firefox
+  - Opera
+  - Apple Safari
+
+  ## Deployment
+
+- Ensured deployed page on Heroku loads up correctly.
+- Ensured Debug variable in app.py file is set to False.
+- Confirmed that there is no difference between the deployed version and the development version.  
+
+> [Back to Top](#table-of-contents) 
