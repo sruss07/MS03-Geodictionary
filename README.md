@@ -146,6 +146,7 @@ The colour pallette was chosen to reflect colours which are typical within the m
 - Add links to relevant external sites which can provide additional information on terms within the dictionary
 - Add social channels to allow communication between users
 - Add links to merchandise and trip websites
+- Add all Admin features detailed within my User Stories
 
 
 > [Back to Top](#table-of-contents) 
