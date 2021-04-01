@@ -96,13 +96,13 @@ The overall structure is designed for ease of navigation to each section
 
 ### 4. Skeleton
 
-- Navigation bar - menu with links pointing to each page
-- Home Page - intro headline, alphabet menu and alphabetically sorted terms
-- Register Page - form with fields to create new user and user password
-- Login Page - form with fields for user and password
-- Add Term Page - form with 'Add Term' and 'Add Definition' fields
-- Edit Term Page - form allowing users to edit their own dictionary entries
-- Profile Page - banner showing user name of currently logged in user
+- Navigation bar - When user is not logged in a menu with links pointing to the Home page, the Login page and the Register page. When a user is logged in a menu with links pointing to the Home page, the Profile page, the Add Term page and the logout link
+- Home Page - A navigation bar at top of page with functionality as described above. An intro headline, an alphabet menu for browsing alphabetically sorted terms and definitions. A search form to search the dictionary by keyword(s). A footer with social media links fixed to the bottom of the page
+- Register Page - A navigation bar at top of page with functionality as described above. A Form with fields to create new user and user password. A footer with social media links fixed to the bottom of the page 
+- Login Page - A navigation bar at top of page with functionality as described above. A form with fields for user and password. A footer with social media links fixed to the bottom of the page.
+- Add Term Page - A navigation bar at top of page with functionality as described above. A form with 'Add Term' and 'Add Definition' fields. A footer with social media links fixed to the bottom of the page
+- Edit Term Page - A navigation bar at top of page with functionality as described above. A form allowing users to edit their own dictionary entries. A footer with social media links fixed to the bottom of the page
+- Profile Page - A navigation bar at top of page with functionality as described above. A banner showing user name of currently logged in user and a description of the purpose of the site and how users can contribute. A footer with social media links fixed to the bottom of the page
 
 - Wireframes for mobile phones, tablets and desktops can be found here [Wireframes](static/wireframes/all-wireframes.pdf)
 
@@ -232,6 +232,8 @@ Testing documentation can be found on a separate document [HERE](static/testing/
 ## Project barriers and solutions
 
 - My search function worked perfectly when searching for terms, when returning no results found, and when resetting the search. However, when a search term was returned, I found that, if it appeared in multiple terms, then these terms remained located under the div which contained each alphabetical letter. The effect I desired was for all returned terms to be filtered to the top, below the search form, so they could be easily viewed, and for the divs containing the alphabetical letters to be hidden. To achieve the desired effect I 
+
+- The text 'Search' on the search button within the search form disappears on smaller screen sizes. To fix this problem I changed the text from 'Search' to 'Go'. I am sure there is a more technical way to fix this problem, but this solution proved sufficient in the circumstances
 
 > [Back to Top](#table-of-contents) 
 
