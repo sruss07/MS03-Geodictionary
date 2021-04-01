@@ -41,29 +41,29 @@
 
 - As a user, going forward I would like to be able to interact with other users on the site on a social level
 
-**TESTING:** The functionality to interact with other users has been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality to interact with other users has been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 - As a user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
 
-**TESTING:** The functionality to see recommendations has been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality to see recommendations has been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 ### Admin
 
 - As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site
 
-**TESTING:** The functionality to log in as an admin to curate and maintain the site has been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality to log in as an admin to curate and maintain the site has been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 - As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary
 
-**TESTING:** The functionality for an admin to monitor the suitability of information being added been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality for an admin to monitor the suitability of information being added been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 - As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts
 
-**TESTING:** The functionality to delete user accounts has been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality to delete user accounts has been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 - As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users
 
-**TESTING:** The functionality to update all terms and definitions has been included in my 'Features Left to Implement' section in my README file [HERE](/workspace/MS03-Geodictionary/README.md)
+**TESTING:** The functionality to update all terms and definitions has been included in my 'Features Left to Implement' section in my README file [HERE](README.md)
 
 > [Back to Top](#table-of-contents) 
 
