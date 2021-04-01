@@ -31,27 +31,19 @@ The aim of this project is to create a comprehensive geology and earth sciences 
 
 ## User Stories
 
-### New Users
+### Users
 
-- As a new user I want to be presented with a simple, enjoyable and easy to use site, that is also visually appealing
-- As a new user I want to be able to navigate around the site with ease
-- As a new user I want to be able to easily find the geological term I am looking for, via an alphabetical ordering system
-- As a new user I would like the option to add to the dictionary of geological terms
-- As a new user I want to have access to the geological terms/definitions that I have previously created and have the option to edit them
-- As a new user I want to enjoy using the site enough to want to return
+- As a user I want to be presented with a simple, enjoyable and easy to use site, that is also visually appealing
+- As a user I want to be able to navigate around the site with ease
+- As a user I want to be able to easily find the geological term I am looking for, via an alphabetical ordering system
+- As a user I want to be able to easily find the geological term I am looking for, via a search form
+- As a user I would like the option to add to the dictionary of geological terms
+- As a user I want to have access to the geological terms/definitions that I have previously created and have the option to edit them
+- As a user I want to enjoy using the site enough to want to return
+- As a user, going forward I would like to be able to interact with other users on the site on a social level
+- As a user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
 
-### Returning Users
-
-- As a returning user I want all the requirements of a new user
-- As a returning user I want to be able to see any new geological terms that have been added in a logical order
-
-### Frequent Users
-
-- As a frequent user I want all the requirements of a new and returning user
-- As a frequent user, going forward I would like to be able to interact with other users on the site on a social level
-- As a frequent user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
-
-### Admin Users
+### Admin
 
 - As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site
 - As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary
