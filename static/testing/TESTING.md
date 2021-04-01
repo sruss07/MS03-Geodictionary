@@ -9,6 +9,61 @@
 
 ## User Stories
 
+### Users
+
+- As a user I want to be presented with a simple, enjoyable and easy to use site, that is also visually appealing
+
+**TESTING:** On first visiting the page, a new user will find themselves on the Home page. They will find a clean and visually appealing page with a top navigation bar containing links to other pages, site hero text, links to browse and search site content, terms and definitions in alphabetical order, and a page footer
+
+- As a user I want to be able to navigate around the site with ease
+
+**TESTING:** Users can easily move around the site by using the navigation bar links which return users to the home page, allow users to log in, or allow users to register. Users can also browse and search site terms and definitions using the alphabet browse function or the search form. An arrow in the right margin allows users to easily navigate up and down the page without having to use scroll bars
+
+- As a user I want to be able to easily find the geological term I am looking for, via an alphabetical ordering system
+
+**TESTING:** As detailed above, users can easily browse site terms and definitions using the alphabet browse function. When a letter is clicked, the page will scroll to the appropriate location.
+
+- As a user I want to be able to easily find the geological term I am looking for, via a search form
+
+**TESTING:** As detailed above, users can easily search for site terms and definitions using the search form. When a keyword(s) are entered into the form, the page will return all terms and definitions containing that keyword(s). The search form also contains a reset button
+
+- As a user I would like the option to add to the dictionary of geological terms
+
+**TESTING:** Users can add terms and definitions to the site only once they have registered an new account. Once registered, the user logs in to their profile where they will now have access to the 'Add Term' link. This link directs users to a form where they can add new terms and definitions to the dictionary
+
+- As a user I want to have access to the geological terms/definitions that I have previously created and have the option to edit them
+
+**TESTING:** Users who have registered have access to edit any terms and definitions which they added to the dictionary. This is achieved by clicking the edit button on each entry they have provided. The edit button is only visible on the entries of that particular user. The edit button directs the user to the edit form where they can perform any edits required
+
+- As a user I want to enjoy using the site enough to want to return
+
+**TESTING:** The site is simple and contains functionality which makes it easy for users to navigate and discover the information they are seeking. These characteristics will make the site attractive for users to visit numerous times
+
+- As a user, going forward I would like to be able to interact with other users on the site on a social level
+
+**TESTING:** The functionality to interact with other users has been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
+
+- As a user, going forward I would like to be able to see recommendations for geological themed merchandise, trips etc
+
+**TESTING:** The functionality to see recommendations has been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
+
+### Admin
+
+- As an admin I would like the ability to **log into an admin account**, so that I can curate and maintain the contents of the site
+
+**TESTING:** The functionality to log in as an admin to curate and maintain the site has been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
+
+- As an admin user I would like the ability to track the activity of registered users so I can monitor the suitability of information being added to the dictionary
+
+**TESTING:** The functionality for an admin to monitor the suitability of information being added been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
+
+- As an admin I would like to be able to delete user accounts, so that I can maintain control of user accounts
+
+**TESTING:** The functionality to delete user accounts has been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
+
+- As an admin I would like to be able to update all terms and definitions so that I can ensure the site is kept relevant, factually correct and visually appealing for all users
+
+**TESTING:** The functionality to update all terms and definitions has been included in my 'Features Left to Implement' section in my README file [HERE](../README.md)
 
 > [Back to Top](#table-of-contents) 
 
