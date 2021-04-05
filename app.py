@@ -33,6 +33,7 @@ def get_geoTerms():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    # Searches for terms by keywords
     query = request.form.get("query")
     if not query:
         return render_template("terms.html")
