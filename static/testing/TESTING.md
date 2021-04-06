@@ -73,12 +73,17 @@
 
 Passed code through [Nu Html Checker](https://validator.w3.org/#validate_by_uri)by entering the 'Validate by URI method.
 
+- No errors found
+- 1 warning - Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections. - safely ignored.
+
+![Screenshot of CSS Validation](../testing/html_validation.png)
+
 ### CSS
 
 Passed code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) by pasting code in by direct input method
 
 - No errors found
-- 1 warning - imported style sheets are not checked in direct input and file upload modes - safely ignored.
+- 1 warning - Imported style sheets are not checked in direct input and file upload modes - safely ignored.
 
 ![Screenshot of CSS Validation](../testing/css_validation.png)
 
