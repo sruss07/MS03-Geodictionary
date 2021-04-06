@@ -18,14 +18,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-"""
-Pulls terms from the geoTerms collection in database
-"""
-
-
 @app.route("/")
 @app.route("/get_geoTerms")
 def get_geoTerms():
+    """
+    Pulls terms from the geoTerms collection in database
+    """
     # Sorts terms alphabetically
     geoTerms = list(mongo.db.geoTerms.find().sort("geology_term"))
     return render_template("terms.html", show_letters=True, geoTerms=geoTerms)
@@ -33,6 +31,9 @@ def get_geoTerms():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    Searches for terms from the geoTerms collection in database
+    """
     # Searches for terms by keywords
     query = request.form.get("query")
     if not query:
@@ -41,13 +42,11 @@ def search():
     return render_template("terms.html", geoTerms=geoTerms)
 
 
-"""
-Registers a new user and adds to user collection in database
-"""
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Registers a new user and adds to user collection in database
+    """
     if request.method == "POST":
         # Checks db to see if user already in use
         existing_user = mongo.db.users.find_one(
@@ -71,13 +70,11 @@ def register():
     return render_template("register.html")
 
 
-"""
-Allows users to log in to site
-"""
-
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Allows users to log in to site
+    """
     if request.method == "POST":
         # Checks db to see if user already in use
         existing_user = mongo.db.users.find_one(
@@ -105,13 +102,11 @@ def login():
     return render_template("login.html")
 
 
-"""
-User profile page
-"""
-
-
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+    User profile page
+    """
     # get the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -122,26 +117,22 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-"""
-Logs user out of their profile
-"""
-
-
 @app.route("/logout")
 def logout():
+    """
+    Logs user out of their profile
+    """
     # removes user from session cookies once logged out
-    flash("You have logged out.")
+    flash("You have logged out")
     session.pop("user")
     return redirect(url_for("get_geoTerms"))
 
 
-"""
-Allows users to add new terms to the database
-"""
-
-
 @app.route("/add_term", methods=["GET", "POST"])
 def add_term():
+    """
+    Allows users to add new terms to the database
+    """
     # allows users to add new terms and definitions
     if request.method == "POST":
         geoTerms = {
@@ -157,13 +148,11 @@ def add_term():
     return render_template("add_term.html")
 
 
-"""
-Allows users to edit existing terms in the database
-"""
-
-
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
+    """
+    Allows users to edit existing terms in the database
+    """
     # allows users to edit existing terms and definitions
     if request.method == "POST":
         geoTerms = {
@@ -178,13 +167,11 @@ def edit_term(term_id):
     return render_template("edit_term.html", term=term)
 
 
-"""
-Allows users to delete existing terms in the database
-"""
-
-
 @app.route("/delete_term/<term_id>")
 def delete_term(term_id):
+    """
+    Allows users to delete existing terms in the database
+    """
     mongo.db.geoTerms.remove({"_id": ObjectId(term_id)})
     flash("Thanks, geology term and definition deleted.")
     return redirect(url_for("get_geoTerms"))
