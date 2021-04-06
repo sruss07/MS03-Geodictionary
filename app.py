@@ -28,7 +28,7 @@ Pulls terms from the geoTerms collection in database
 def get_geoTerms():
     # Sorts terms alphabetically
     geoTerms = list(mongo.db.geoTerms.find().sort("geology_term"))
-    return render_template("terms.html", geoTerms=geoTerms)
+    return render_template("terms.html", show_letters=True, geoTerms=geoTerms)
 
 
 @app.route("/search", methods=["GET", "POST"])
